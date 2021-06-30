@@ -13,9 +13,9 @@
 
 Neuroimaging data is being generated more quickly than institutional infrastructure can keep up with in regards to storage and tools to sift through the deluge of scientific information. Decentralised file storage protocols offer solutions to these problems via content addressable data, programmable incentives for data storage, provenance tracking, censorship resistance, and bandwidth/speed that scales with global adoption. 
 
-Our team developed a proof-of-concept of our Open Science Data Wallet at the ETHGlobal Web3Weekend. We were chosen as finalists and also won the Textile.io prize and IPFS blog recognised us as a project that most inspired them. This proposal is to carry on with this idea and research the backend of how we would handle large terabytes of data on IPFS and how we can integrate that into our data wallet. We also want to carry out in-depth user-research into what our scientific users want and from there develop feature requirements for future product development.
+Our team developed a proof-of-concept of our Open Science Data Wallet at the ETHGlobal Web3Weekend. We were chosen as finalists and also won the Textile.io prize and IPFS blog recognised us as a project that most inspired them. This proposal is to carry on with this idea and research the backend of how we would handle large data (tens to hundreds of terabytes) on IPFS and how we can integrate that into our data wallet. We also want to carry out in-depth user-research into what our scientific users want and from there develop feature requirements for future product development.
 
-We are partnering with DANDI (Distributed Archives for Neurophysiology Data Integration) at MIT which is funded by the US government BRAIN initiative (set up by the Obama administration) to test if IPFS can successfully support 2.5 terabytes of brain data. This data is currently non-human and is stored centrally on AWS. However, when human brain data starts being collected by DANDI, and other neuroscience laboratories, there is an inherent ethical risk of storing human data with Big Tech companies. This is where decentralised data storage comes in and we would like to work with IPFS to help verify and build a solution that helps scientists to store their data in an ethical manner.
+We are partnering with DANDI (Distributed Archives for Neurophysiology Data Integration) at MIT which is funded by the US government BRAIN initiative (set up by the Obama administration) to test if IPFS can successfully support 2.5 terabytes of brain data. This data is currently non-human and is stored centrally on AWS. However, when human brain data starts being collected by DANDI, and other neuroscience laboratories, there is an inherent ethical risk of storing human data with Big Tech companies. This is where decentralised data storage comes in and we would like to leverage IPFS to help verify and build a solution that helps scientists to store their data in an ethical manner.
 
 **Milestones for this project:**
 1. Build on initial user-research with users (neuroscientists)
@@ -62,7 +62,6 @@ Opscientia will test the feasibility of loading a 2.5 TB Human Brain image using
 3. Can researchers "do science" on uploaded data?
 4. How do latencies compare to centralised storage (i.e. S3 buckets)?
 5. How will it integrate and perform with *Neuroglancer* (WebGL-based visualisation tool)?
-6. How does data pinning work?
 
 ### Milestone 1: Build on initial user-research with users (neuroscientists) - 2 weeks (30 August - 10 September)
 
@@ -70,7 +69,7 @@ Opscientia will test the feasibility of loading a 2.5 TB Human Brain image using
 User research with target audience (Distributed Archives for Neurophysiology Data Integration (DANDI) affiliated lab researchers) to understand data needs.
 
 **Method:**
-In dept 1:1 interviews with DANDI affiliated members (n=5)
+In-depth 1:1 interviews with DANDI affiliated members (n=5)
 
 **User research protocol:**
 - Obtain info about researcher (e.g. career level, experience with Web3 tools, etc) - these will be used to build user personas
@@ -91,8 +90,8 @@ User personas, current state user journey map, feature requirements for POC, use
 **Aims:**
 - Gather benchmarks on data ingress and egress speeds using Textile/Filecoin/IPFS
 - Test feasibility of storing a ~2.5TB brain image, and see if latency is low enough to view the image on Neuroglancer. Compare latency and costs with traditional AWS bucket storage.
-- Research methods for fine-tuning control on storage redundancy - ensure at least n=2 nodes are pinning the data at all times
-- Research methods to handle metadata and raw data relationship considering pros & cons of on-chain & off-chain designs
+- Research methods to control the level of storage redundancy - ensure at least n=2 nodes are pinning the data at all times
+- Research methods to handle relationship between metadata and raw data, considering pros & cons of on-chain & off-chain designs
 
 **Team members:**
 - Shady (part-time) - product owner
@@ -243,13 +242,14 @@ Achintya Kumar, is Opscientia's Open Web Fellow, who is applying his web develop
 
 Kinshuk Kashyap, is Opscientia's Google Summer of Code Fellow, who was awarded a competitive summer fellowship. He is our resident IPFS expert with a passion for decentralised neuroscience data.
 
-## Team code repositories
+## Code repositories
 - Opscientia GitHub organisation - https://github.com/opscientia
+- Our Web3Weekend Hackathon showcase page - https://showcase.ethglobal.co/web3weekend/open-science-opsci-data-wallet
+- The data wallet code - https://github.com/opscientia/web3weekend-hackathon
+
+## Team Github Handles
 - Shady - https://github.com/seldamat
 - Sarah - https://github.com/shamburgularara
 - Alexandra - https://github.com/XandraMcC
 - Achintya - https://github.com/Ackintya
 - Kinshuk - https://github.com/kinshukk
-- Our Web3Weekend Hackathon showcase page - https://showcase.ethglobal.co/web3weekend/open-science-opsci-data-wallet
-
-The data wallet code - https://github.com/opscientia/web3weekend-hackathon
